@@ -619,14 +619,26 @@ footer a:hover {
   line-height: 70px;
   text-shadow: 0 2.5px 0 rgba(0, 0, 0, 0.1); }
 
+.img-banner {
+  height: 200px;
+  background-image: url(/images/pages/food.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px; }
+
+@media screen and (max-width: 640px) {
+  .main-body {
+    padding-top: 50px;
+    padding-bottom: 0px !important; } }
 @media screen and (max-width: 1024px) {
   .hero-banner h1 {
-    font-size: 44px;
-    line-height: 50px; }
+    font-size: 54px;
+    line-height: 65px; }
 
-  .hero-banner h4 {
-    font-size: 24px;
-    line-height: 38px; } }
+  .hero-banner h2 {
+    font-size: 34px;
+    line-height: 48px; } }
 @media screen and (max-width: 639px) {
   .banner img {
     max-height: 120px;
@@ -634,12 +646,13 @@ footer a:hover {
     transition: 0.5s; } }
 @media screen and (max-width: 540px) {
   .hero-banner h1 {
-    font-size: 34px;
-    line-height: 44px; }
+    font-size: 32px;
+    line-height: 42px; }
 
-  .hero-banner h4 {
+  .hero-banner h2 {
     font-size: 24px;
-    line-height: 38px; }
+    line-height: 38px;
+    font-weight: 500; }
 
   .header-nav h1 {
     font-size: 24px;
