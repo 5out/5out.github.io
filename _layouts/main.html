@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<!-- <script>
+$(document).ready(function(){
+  $(".readmore").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#readmore").offset().top
+    }, 600);
+  });
+
+  $(".signup").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#signup").offset().top
+    }, 600);
+  });
+});
+</script> -->
+
+
+<div class="header-nav" data-sticky-container>
+  <!-- <div id="sticky-header" class="sticky" data-sticky data-options="anchor: page; stickyOn: small; marginTop: 0;"> -->
+  <div>
+    <div class="title-bar hide-for-medium-nav">
+      <div class="title-bar-title">
+        <div class="logo">
+          <a href="/">
+            <a href="/"><img src="/images/logos/fiveout-w.svg"></a>
+            <!-- <h1>Phil</h1> -->
+          </a>
+        </div>
+      </div>
+      <!-- <button class="menu-icon" type="button" onclick="openNav()"></button> -->
+    </div>
+
+    <div class="top-bar hide-for-small-only-nav">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+          <li>
+            <div class="logo">
+              <a href="/">
+                <a href="/"><img src="/images/logos/fiveout-w.svg"></a>
+                <!-- <h1>Phil</h1> -->
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="nav-menu" class="top-bar-right hide-for-small-only-nav invisible-man">
+        <ul class="dropdown menu" data-dropdown-menu data-options="disableHover:true;clickOpen:true">
+          <!-- <li><a href="/">HOME</a></li>
+          <li><a class="signup">SIGN UP</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div id="navTray" class="overlay">
+    <!-- <div class="title-bar hide-for-medium-nav">
+      <div class="title-bar-title">
+        <h1>With Phil</h1>
+      </div>
+    </div> -->
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="row">
+        <div class="small-12 columns">
+          <!-- <h2>Product</h2> -->
+          <span class="overlay-sub">
+            <h3><a href="/">Home</a></h3>
+            <!-- <h3><a href="/how-it-works/">How it works</a></h3> -->
+            <h3><a class="signup" onclick="closeNav()">Sign up</a></h3>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ content }}
+  {% include footer.html %}
+</main>
