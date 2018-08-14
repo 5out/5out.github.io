@@ -159,9 +159,28 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <div class="page-content">
+  <script>
 
-  <div class="hero-banner home">
+function imgbg() {
+   var imgCount = 4;
+   var randomCount = (Math.floor(Math.random() * imgCount));
+   var images = [
+     'background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.6) 100%), url(/images/pages/hero1.jpg);background-position: center;background-size: cover;',
+     'background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.6) 100%), url(/images/pages/hero2.jpg);background-position: center;background-size: cover;',
+     'background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.6) 100%), url(/images/pages/hero3.jpg);background-position: center;background-size: cover;',
+     'background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.6) 100%), url(/images/pages/hero4.jpg);background-position: center;background-size: cover;',
+
+   ];
+   document.getElementById('banner').setAttribute("style", images[randomCount] );
+}
+$(document).ready(function(){
+  imgbg();
+});
+</script>
+
+<div class="page-content">
+
+  <div id="banner" class="hero-banner home">
     <div class="row align-middle align-center" style="position: relative;top: 50%;transform: translateY(-50%);">
       <div class="large-10 medium-10 small-12 columns">
         <div class="row align-middle">
