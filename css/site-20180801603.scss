@@ -1,15 +1,14 @@
 ---
 ---
 
-$primary-font: 'Comfortaa', sans-serif;
+$primary-font: 'Adelle Sans', sans-serif;
 $base-font-colour: rgba(0,0,0,0.6);;
 $title-font-colour: rgba(39, 50, 56, 0.9);
 $subtitle-font-colour: rgba(39, 50, 56, 0.8);
 $muted-font-colour: rgba(13,54,80,0.3);
 $border-colour: #ECEFF1;
-$footer-base-colour: rgb(118, 75, 162);
-$footer-base-font-colour: rgba(0,0,0,0.6);;
-$footer-link-hover-colour: rgba(0,0,0,1);
+$footer-base-font-colour: rgba(255,255,255,0.8);;
+$footer-link-hover-colour: rgba(255,255,255,1);
 $footer-title-font-colour: rgba(255, 255, 255, 0.9);
 $header-nav-height: 100px;
 $standard-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -74,7 +73,7 @@ pre.highlight {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -372,8 +371,8 @@ a:hover {
 
 footer {
   // padding: 80px 0px 0px;
-  border-top: 1px solid #E4E4E4;
-  background-color: white;
+  border-top: 3px solid $primary-color;
+  background-color: $primary-color;
   background-size: cover;
   background-position: center;
   box-shadow: 0px 1000px 0px 1000px white;
@@ -504,7 +503,7 @@ footer a:hover {
 }
 
 .button {
-  @include border-radius(10px);
+  @include border-radius(2px);
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -530,7 +529,7 @@ footer a:hover {
   border-color: $border-colour;
   border-style: solid;
   border-width: 1px;
-  @include border-radius(15px);
+  @include border-radius(2px);
   padding: 50px;
   margin-bottom: 80px;
 }
@@ -583,7 +582,7 @@ footer a:hover {
   margin-top: -$header-nav-height;
   padding-top: calc(#{$header-nav-height} + 100px);
   padding-bottom: calc(#{$header-nav-height} + 100px);
-  height: 100vh;
+  height: calc(100vh - 3px);
   // max-height: 1000px;
   min-height: 750px;
 }
@@ -735,10 +734,10 @@ footer a:hover {
   display: inline-block;
   width: calc(100% - 150px);
   // max-width: 435px;
-  @include border-radius(10px 0px 0px 10px);
+  @include border-radius(2px 0px 0px 2px);
   background-color: white;
   border: transparent;
-  padding-left: 35px;
+  padding-left: 15px;
   box-shadow: none;
   box-shadow: $standard-shadow;
   font-size: 16px;
@@ -767,7 +766,7 @@ footer a:hover {
   margin: 0px;
   margin-top: -1px;
   margin-left: -5px;
-  @include border-radius(0px 10px 10px 0px);
+  @include border-radius(0px 2px 2px 0px);
 }
 
 .phil {
@@ -940,12 +939,12 @@ footer a:hover {
   #mc_embed_signup input.email {
     display: block;
     width: 100%;
-    @include border-radius(10px);
+    @include border-radius(2px);
   }
   #mc_embed_signup .button.colour-fill {
     width: 100%;
     margin-left: 0px;
-    @include border-radius(10px);
+    @include border-radius(2px);
   }
   .buttons {
     margin-top: 60px;
