@@ -1,10 +1,10 @@
 # Site settings
-title: Five Out - Coming Soon
-email: team@fiveout.co
+title: Nomi Nomi - Coming Soon
+email: team@nominomi.co
 description: > # this means to ignore newlines until "baseurl:"
   Find Your City's Best Streetfood Chefs.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.fiveout.co" # the base hostname & protocol for your site
+url: "https://www.nominomi.co" # the base hostname & protocol for your site
 twitter_username: fiveout
 github_username:  fiveout
 
